@@ -682,11 +682,17 @@
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <connections>
+                                    <action selector="updateVolume:" target="XfG-lQ-9wD" id="jgQ-HQ-Ixn"/>
+                                </connections>
                             </textField>
                             <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HER-aN-Lnf">
                                 <rect key="frame" x="58" y="58" width="20" height="164"/>
                                 <animations/>
                                 <sliderCell key="cell" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="uMn-EX-BJd"/>
+                                <connections>
+                                    <action selector="updateVolume:" target="XfG-lQ-9wD" id="6Yv-hB-mhd"/>
+                                </connections>
                             </slider>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nU0-BM-k43">
                                 <rect key="frame" x="28" y="13" width="81" height="32"/>
@@ -695,10 +701,17 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="mute:" target="XfG-lQ-9wD" id="NUk-hq-vKD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
                     </view>
+                    <connections>
+                        <outlet property="slider" destination="HER-aN-Lnf" id="0iz-QG-8nI"/>
+                        <outlet property="textField" destination="L0t-Ya-tcy" id="lhD-pe-2pA"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

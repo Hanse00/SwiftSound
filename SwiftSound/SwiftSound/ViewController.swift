@@ -9,6 +9,10 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    @IBOutlet weak var textField: NSTextField!
+    @IBOutlet weak var slider: NSSlider!
+    
+    var volume: Float = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +25,15 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
-
+    
+    @IBAction func mute(sender: AnyObject) {
+        volume = 0
+        NSLog("Mute clicked!")
+    }
+    
+    @IBAction func updateVolume(sender: AnyObject) {
+        volume = sender.floatValue
+        NSLog("Volume set to: \(volume)")
+    }
 }
 
