@@ -677,7 +677,11 @@
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L0t-Ya-tcy">
                                 <rect key="frame" x="20" y="228" width="96" height="22"/>
                                 <animations/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="sSH-dO-13j">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="sSH-dO-13j">
+                                    <numberFormatter key="formatter" formatterBehavior="custom10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="2" maximumFractionDigits="2" id="Mxv-BW-ncE">
+                                        <real key="minimum" value="0.0"/>
+                                        <real key="maximum" value="11"/>
+                                    </numberFormatter>
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -689,7 +693,7 @@
                             <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HER-aN-Lnf">
                                 <rect key="frame" x="58" y="58" width="20" height="164"/>
                                 <animations/>
-                                <sliderCell key="cell" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="uMn-EX-BJd"/>
+                                <sliderCell key="cell" continuous="YES" alignment="left" maxValue="11" doubleValue="5" tickMarkPosition="right" sliderType="linear" id="uMn-EX-BJd"/>
                                 <connections>
                                     <action selector="updateVolume:" target="XfG-lQ-9wD" id="6Yv-hB-mhd"/>
                                 </connections>
