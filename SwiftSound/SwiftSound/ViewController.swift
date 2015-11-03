@@ -29,11 +29,18 @@ class ViewController: NSViewController {
     @IBAction func mute(sender: AnyObject) {
         volume = 0
         NSLog("Mute clicked!")
+        updateUI()
     }
     
     @IBAction func updateVolume(sender: AnyObject) {
         volume = sender.floatValue
         NSLog("Volume set to: \(volume)")
+        updateUI()
+    }
+    
+    func updateUI() {
+        textField.floatValue = volume
+        slider.floatValue = volume
     }
 }
 
