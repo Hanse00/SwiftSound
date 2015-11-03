@@ -12,7 +12,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var textField: NSTextField!
     @IBOutlet weak var slider: NSSlider!
     
-    var volume: Float = 0
+    let track = Track()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,20 +27,20 @@ class ViewController: NSViewController {
     }
     
     @IBAction func mute(sender: AnyObject) {
-        volume = 0
+        track.volume = 0
         NSLog("Mute clicked!")
         updateUI()
     }
     
     @IBAction func updateVolume(sender: AnyObject) {
-        volume = sender.floatValue
-        NSLog("Volume set to: \(volume)")
+        track.volume = sender.floatValue
+        NSLog("Volume set to: \(track.volume)")
         updateUI()
     }
     
     func updateUI() {
-        textField.floatValue = volume
-        slider.floatValue = volume
+        textField.floatValue = track.volume
+        slider.floatValue = track.volume
     }
 }
 
