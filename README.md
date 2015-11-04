@@ -13,10 +13,16 @@ The functionality of the app is very simple, it plays a sound loop, which can be
 
 ## License
 
-The project is licensed under the MIT License.
+All the code in project is licensed under the MIT License.
 
 In brief this means you can do anything you want with the software. Have fun!
 
-See the [full license][] for the details.
+See the [full MIT license][] for the details.
 
-[full license]: LICENSE "Full License"
+The audio file "[beatbox.mp3][]" is licensed under the [creative commons attribution 4.0][] license.
+
+[beatbox.mp3]: SwiftSound/SwiftSound/beatbox.mp3
+
+[full MIT license]: LICENSE "Full License"
+
+[creative commons attribution 4.0]: http://creativecommons.org/licenses/by/4.0/ "Creative Commons Attribution 4.0"
