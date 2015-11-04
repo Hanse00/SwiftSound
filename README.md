@@ -9,7 +9,10 @@ The app is made based on the [Apple Developers][] tutorial on creating your [fir
 [swift]: https://developer.apple.com/swift/ "The swift programming language"
 [objective-c]: https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html "The Objective-C programming language"
 
-The functionality of the app is very simple, it plays a sound loop, which can be adjusted in volume by a slider, a text field, or a mute button, as seen here.
+The functionality of the app is very simple, it plays a sound loop, which can be adjusted in volume by a slider, a text field, or a mute button.
+See this [youtube video][] for a demonstration, and the image below for the UI.
+
+[youtube video]: https://youtu.be/Zs5OLbRf8wQ "SwiftSound Demo"
 
 ![Program Screenshot](image.png)
 
