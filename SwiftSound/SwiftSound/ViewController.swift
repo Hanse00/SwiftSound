@@ -12,12 +12,13 @@ class ViewController: NSViewController {
     @IBOutlet weak var textField: NSTextField!
     @IBOutlet weak var slider: NSSlider!
     
-    let track = Track()
+    var track: Track!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        track = Track(path: "beatbox.mp3")
         updateUI()
     }
 
