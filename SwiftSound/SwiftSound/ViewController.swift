@@ -3,7 +3,8 @@
 //  SwiftSound
 //
 //  Created by Philip Hansen on 03/11/15.
-//  Copyright © 2015 Philip Hansen. All rights reserved.
+//  Copyright © 2015 Philip Hansen. Licensed under the MIT Licnse.
+//  See the LICENSE file in the repository root for details.
 //
 
 import Cocoa
